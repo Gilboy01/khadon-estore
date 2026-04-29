@@ -7,7 +7,7 @@ import axiosInstance from "../lib/axios";
 
 //publishable stripe key
 const stripePromise = loadStripe(
-  "pk_test_51SZBi6Qot2OkyzI3fUdPY7N0h0y6TASaadm0OyVGJuDNPc7UMXJHPHBmEcfZIbla9FJcUHyAt01R00oruWLcJLb400QhxGU91c"
+  "pk_test_51SZBi6Qot2OkyzI3fUdPY7N0h0y6TASaadm0OyVGJuDNPc7UMXJHPHBmEcfZIbla9FJcUHyAt01R00oruWLcJLb400QhxGU91c",
 );
 const OrderSummary = () => {
   const { total, subtotal, coupon, isCouponApplied, cart } = useCartStore();
@@ -49,7 +49,7 @@ const OrderSummary = () => {
               Original price
             </dt>
             <dd className="text-base font-medium text-white">
-              ${formattedSubtotal}
+              UGX.{formattedSubtotal}
             </dd>
           </dl>
 
@@ -57,7 +57,7 @@ const OrderSummary = () => {
             <dl className="flex items-center justify-between gap-4">
               <dt className="text-base font-normal text-gray-300">Savings</dt>
               <dd className="text-base font-medium text-emerald-400">
-                -${formattedSavings}
+                -UGX.{formattedSavings}
               </dd>
             </dl>
           )}

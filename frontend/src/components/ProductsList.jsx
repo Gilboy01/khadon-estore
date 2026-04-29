@@ -72,9 +72,7 @@ const ProductsList = () => {
               </td>
 
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-300">
-                  ${product.price.toFixed(2)}
-                </div>
+                <div className="text-sm text-gray-300">UGX.{product.price}</div>
               </td>
 
               <td className="px-6 py-4 whitespace-nowrap">

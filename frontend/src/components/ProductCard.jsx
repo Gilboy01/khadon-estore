@@ -30,10 +30,16 @@ const ProductCard = ({ product }) => {
         <h5 className="text-xl font-semibold tracking-tight text-white">
           {product.name}
         </h5>
+        {/*Added for test */}
+        <div className="mt-2 mb-5 flex items-center justify-between">
+          <p>
+            <span className="text-xs text-white">{product.description}</span>
+          </p>
+        </div>
         <div className="mt-2 mb-5 flex items-center justify-between">
           <p>
             <span className="text-3xl font-bold text-emerald-400">
-              ${product.price}
+              UGX.{product.price}
             </span>
           </p>
         </div>

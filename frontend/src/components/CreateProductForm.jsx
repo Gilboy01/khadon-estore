@@ -121,6 +121,7 @@ const CreateProductForm = () => {
           <input
             type="number"
             id="price"
+            placeholder="UGX."
             name="price"
             value={newProduct.price}
             onChange={(e) =>
