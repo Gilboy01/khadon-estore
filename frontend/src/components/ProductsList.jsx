@@ -72,7 +72,9 @@ const ProductsList = () => {
               </td>
 
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-300">UGX.{product.price}</div>
+                <div className="text-sm text-gray-300">
+                  UGX.{Number(product.price).toLocaleString()}
+                </div>
               </td>
 
               <td className="px-6 py-4 whitespace-nowrap">

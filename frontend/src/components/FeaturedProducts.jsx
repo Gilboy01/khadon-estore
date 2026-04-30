@@ -67,7 +67,7 @@ const FeaturedProducts = ({ featuredProducts }) => {
                         {product.name}
                       </h3>
                       <p className="text-emerald-300 font-medium mb-4">
-                        UGX.{product.price}
+                        UGX.{Number(product.price).toLocaleString()}
                       </p>
                       <button
                         onClick={() => addToCart(product)}
